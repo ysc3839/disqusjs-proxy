@@ -11,7 +11,8 @@ const option = {
 
 if (config.resHeaders) {
   option.onProxyRes = (proxyRes, req, res) => {
-    Object.assign(proxyRes.headers, config.resHeaders);
+    if (proxyRes.statusCode === 200)
+      Object.assign(proxyRes.headers, config.resHeaders);
   };
 }
 

@@ -1,0 +1,7 @@
+{
+  "proxyOpt": {
+    "pathRewrite": {"^/disqus" : ""}
+  },
+  "refererHost": ["test.example.com", "disqus.example.com"],
+  "resHeaders": {"cache-control": "public, max-age=300, s-maxage=300"}
+}

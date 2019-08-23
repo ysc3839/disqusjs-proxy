@@ -1,0 +1,23 @@
+{
+  "name": "disqusjs-proxy-firebase",
+  "description": "Disqus API Proxy for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.4.0",
+    "firebase-functions": "^3.2.0",
+    "http-proxy-middleware": "^0.19.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}

@@ -30,9 +30,9 @@ exports.disqus = functions.https.onRequest((req, res) => {
       }
     } catch (e) {}
     if (!pass) {
-      res.set('vary', 'Referer')
-        .set('cache-control', 'public, max-age=86400, s-maxage=86400')
-        .json({});
+      res.status(404).set('vary', 'Referer')
+        .set('cache-control', 'public, max-age=604800, s-maxage=604800')
+        .end();
       return;
     }
   }

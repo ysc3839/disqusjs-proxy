@@ -12,9 +12,9 @@
     "node": "8"
   },
   "dependencies": {
+    "disqusjs-proxy": "github:ysc3839/disqusjs-proxy#master",
     "firebase-admin": "^8.4.0",
-    "firebase-functions": "^3.2.0",
-    "http-proxy-middleware": "^0.19.1"
+    "firebase-functions": "^3.2.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.1.6"

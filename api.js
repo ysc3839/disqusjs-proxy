@@ -28,7 +28,7 @@ module.exports = function(config) {
    * @param {request} req
    * @param {response} res
    */
-  return function(req, res) {
+  function handler(req, res) {
     if (config.refererHost) {
       let pass = false;
       try {
@@ -49,5 +49,7 @@ module.exports = function(config) {
     }
 
     proxy(req, res);
-  };
+  }
+
+  return handler;
 };

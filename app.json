@@ -1,0 +1,8 @@
+{
+  "name": "disqus-proxy",
+  "description": "Disqus API Proxy in Node.js",
+  "repository": "https://github.com/ysc3839/disqusjs-proxy",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "disqus"],
+  "image": "heroku/nodejs"
+}

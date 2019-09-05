@@ -1,0 +1,28 @@
+{
+  "name": "disqusjs-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysc3839/disqusjs-proxy.git"
+  },
+  "author": "Richard Yu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysc3839/disqusjs-proxy/issues"
+  },
+  "homepage": "https://github.com/ysc3839/disqusjs-proxy#readme",
+  "dependencies": {
+    "http-proxy-middleware": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/http-proxy-middleware": "^0.19.3",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

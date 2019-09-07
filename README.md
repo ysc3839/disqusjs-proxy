@@ -19,17 +19,7 @@ Firebase 提供 Serverless 部署服务，支持包括静态网页、微服务�
 4. 执行 `firebase deploy` 部署项目。
 
 ## 自定义
-自定义参数在 `functions/config.json` 文件中。
-
-- `refererHost`: 检查请求来源 ([Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer)) 的主机名。  
-  该选项会检查请求头中的 `Referer` 可以阻止他人使用你的代理。  
-  可以是单个域名 `"disqus.example.com"` 也可以是域名数组 `["test.example.com", "disqus.example.com"]`。  
-  设为 `false` 可禁用检查。
-  > 开启该选项后若检查不通过会返回 404，不返回 403 是因为这么做可以让 Firebase 缓存该结果。
-    开启后无法直接在地址栏中访问，因为直接访问时浏览器不会发送 `Referer`。
-- `resHeaders`: 添加或修改响应头，可以设置 `Cache-Control` 让 Firebase 缓存反代的结果。
-- `proxyOpt`: 传递给 http-proxy-middleware 的[选项](https://github.com/chimurai/http-proxy-middleware#options)。
-  - `pathRewrite`: 设置子目录重写。默认的子目录是 `/disqus/`，如果你想修改，需要同时修改 `config.json` 和 `firebase.json`。
+自定义参数在 `functions/config.json` 文件中。具体说明请参见 master 分支中的 [README.md](https://github.com/ysc3839/disqusjs-proxy/tree/master#%E8%87%AA%E5%AE%9A%E4%B9%89)。
 
 ## 注意事项
 
